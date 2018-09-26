@@ -10,7 +10,7 @@ class Button extends Component {
             [`button-${variation}`]: variation ? true : false,
             [`button-${size}`]: size ? true : false,
             button: true,
-            className
+            [className]: className ? true : false
         });
         return <button className={btnClass}>{children}</button>;
     }

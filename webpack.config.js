@@ -62,7 +62,7 @@ module.exports = {
         }
     },
     plugins: [
-        // new ErrorOverlayPlugin(),
+        new ErrorOverlayPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"

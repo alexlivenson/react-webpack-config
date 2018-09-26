@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Header, Button } from "../core/";
+import { Header, Button, Link } from "../core/";
+import "./custom.scss";
 
 class App extends Component {
     render() {
@@ -9,6 +10,8 @@ class App extends Component {
                 <Button>This is an example of a regular button</Button>
                 <Button variation={Button.Styles.primary}>primary</Button>
                 <Button variation={Button.Styles.secondary}>secondary</Button>
+                <Button className="bigger-button">Using another class</Button>
+                <Link>Link</Link>
             </div>
         );
     }
