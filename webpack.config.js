@@ -35,11 +35,19 @@ module.exports = {
             },
             {
                 test: /\.(sa|sc|c)ss$/,
+                // NOTE: Alex L - Order matters
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
-                    "css-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: false, // Use to automatically set up css modules
+                            localIdentName:
+                                "[name]__[local]--[hash:base64:5]"
+                        }
+                    },
                     "sass-loader"
                 ]
             }

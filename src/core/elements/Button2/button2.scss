@@ -1,26 +1,18 @@
 @import "../../../scss/main.scss";
 
-:local(.button) {
+.button {
   cursor: pointer;
   font-weight: $normal-font-weight;
   border-radius: 10px;
   height: 40px;
   margin: 12px;
 
-  &:local(.button-primary) {
+  &.button-primary {
     background: $cta-color;
     color: white;
   }
 
-  &:local(.button-secondary) {
+  &.button-secondary {
     background: pink;
-  }
-
-  &.button-small {
-    height: 20px;
-  }
-
-  &.button-large {
-    height: 40px;
   }
 }

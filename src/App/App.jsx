@@ -9,7 +9,11 @@ class App extends Component {
                 <Header> This is cool yes! Momey </Header>
                 <Button>This is an example of a regular button</Button>
                 <Button variation={Button.Styles.primary}>primary</Button>
-                <Button variation={Button.Styles.secondary}>secondary</Button>
+                <Button
+                    variation={Button.Styles.secondary}
+                    size={Button.Sizes.small}>
+                    secondary small
+                </Button>
                 <Button className="bigger-button">Using another class</Button>
                 <Link>Link</Link>
             </div>
